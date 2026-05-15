@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Equipe ELET0021",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-neopixel-matrix", "id": "matrix1", "top": -90.81, "left": 150.8, "attrs": { "rows": "5", "cols": "5" } },
+    { "type": "wokwi-pushbutton", "id": "btnA", "top": 25.4, "left": 163.2, "attrs": { "color": "green" } },
+    { "type": "wokwi-pushbutton", "id": "btnB", "top": 83, "left": 163.2, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "matrix1:DIN", "pico:GP7", "green", [ "v0" ] ],
+    [ "matrix1:VDD", "pico:3V3", "red", [ "v0" ] ],
+    [ "matrix1:GND", "pico:GND.1", "black", [ "v0" ] ],
+    [ "btnA:1.l", "pico:GND.2", "black", [ "v0" ] ],
+    [ "btnA:2.l", "pico:GP5", "green", [ "v0" ] ],
+    [ "btnB:1.l", "pico:GND.3", "black", [ "v0" ] ],
+    [ "btnB:2.l", "pico:GP6", "blue", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
