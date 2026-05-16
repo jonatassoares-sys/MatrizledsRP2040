@@ -55,7 +55,7 @@ Animação em 5 frames representando um rosto sorridente na cor azul, que execut
 ## Demonstração em Vídeo
 Assista ao vídeo demonstrando o funcionamento das animações:
 
- https://canva.link/uksoft0ojpl72jq
+ https://canva.link/6fickhkaaa7ton1
 
 ---
 
